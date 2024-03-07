@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+void fibonacci(int number){
+  int n1 = 0, n2 = 1, n3, i;
+  while(n3 < number){
+    
+    n3 = n1 + n2;
+    n1 = n2;
+    n2 = n3;
+  }
+  if(n3 == number){
+    printf("É um numero de fibonacci");
+  }
+  else{
+    printf("Não é um numero de fibonacci");
+  }
+  
+}
+int main( void ) {
+    int x;
+    scanf("%d",&x);
+    fibonacci(x);
+}
